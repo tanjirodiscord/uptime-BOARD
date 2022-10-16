@@ -13,7 +13,7 @@ jobs:
   auto-test:
     needs: [ check-linters ]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 15
+    timeout-minutes: 1000000
 
     strategy:
       matrix:
